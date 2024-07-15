@@ -58,8 +58,6 @@ class RiskAssessmentScreen extends StatelessWidget {
                                 color: ColorResources.white,
                                 child: Column(
                                   children: [
-                                 
-
                                     customeSpacer(context, height: .1),
 
                                     // # 1 Cleaning Product
@@ -89,7 +87,7 @@ class RiskAssessmentScreen extends StatelessWidget {
 
 //  textfield for Enter Notes
 
-                    customeSpacer(context, height: .3),
+                    customeSpacer(context, height: .5),
                     CustomeTextfield(
                         maxLine: 4,
                         hintText: 'Enter Note',
