@@ -47,7 +47,7 @@ class RiskAssessmentScreen extends StatelessWidget {
                         physics: const NeverScrollableScrollPhysics(),
                         shrinkWrap: true,
                         itemBuilder: (context, index) {
-                          // building single  expantion tiles
+// building single  expantion tiles
                           return CustomeExpansionTile(
                             index: index,
                             title: controller.hazardTilesList[index],
@@ -58,10 +58,10 @@ class RiskAssessmentScreen extends StatelessWidget {
                                 color: ColorResources.white,
                                 child: Column(
                                   children: [
-                                    // inner Expandtion tile
-                          
+                                 
+
                                     customeSpacer(context, height: .1),
-                          
+
                                     // # 1 Cleaning Product
                                     SingleRowTile(
                                       title: controller.innertitle[0],
@@ -70,7 +70,7 @@ class RiskAssessmentScreen extends StatelessWidget {
                                     // # 2 Pesticide
                                     SingleRowTile(
                                         title: controller.innertitle[1]),
-                          
+
                                     customeSpacer(context, height: .1),
                                     // # 3 Asbestos
                                     SingleRowTile(

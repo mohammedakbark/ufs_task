@@ -8,5 +8,5 @@ class ColorResources {
   static const Color balck = Colors.black;
   static const Color white = Colors.white;
 
-  static const Color grey = Color.fromRGBO(226, 226, 226, 1);
+  static const Color grey = Color.fromRGBO(243, 243, 243, 1);
 }
