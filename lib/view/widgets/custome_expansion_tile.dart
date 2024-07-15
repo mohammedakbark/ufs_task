@@ -9,14 +9,12 @@ import 'package:ufs_task/utils/style.dart';
 class CustomeExpansionTile extends StatefulWidget {
   final String title;
   final int index;
-  // void Function(bool)? onExpansionChanged;
   List<Widget> childres = [];
   final Color backgroundColor;
   final Color collapsedBackgroundColor;
   CustomeExpansionTile(
       {super.key,
       required this.index,
-      // required this.onExpansionChanged,
       required this.title,
       required this.collapsedBackgroundColor,
       required this.backgroundColor,
@@ -28,20 +26,20 @@ class CustomeExpansionTile extends StatefulWidget {
 
 class _CustomeExpansionTileState extends State<CustomeExpansionTile> {
   bool isButtonPressed = false;
-
+  ExpansionTileController con = ExpansionTileController();
   @override
   Widget build(BuildContext context) {
-    return Consumer<ControllerProvider>(builder: (context, controller, child) {
+    
       return SizedBox(
         width: Dimentions.w(context),
         child: ExpansionTile(
+            controller: con,
             maintainState: true,
             onExpansionChanged: (value) {
               setState(() {
                 isButtonPressed = value;
               });
             },
-           
             trailing: Icon(
               isButtonPressed
                   ? ConstImages.dropUpIcon
@@ -61,6 +59,6 @@ class _CustomeExpansionTileState extends State<CustomeExpansionTile> {
                 fontWeight: FontWeight.w500, size: Dimentions.fontSizeLarge),
             children: widget.childres),
       );
-    });
+   
   }
 }

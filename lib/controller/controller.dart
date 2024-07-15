@@ -13,22 +13,5 @@ class ControllerProvider with ChangeNotifier {
 
   List<String> innertitle = ['Cleaning Products', 'Pesticide', 'Asbestos'];
 
-  bool isDropDownEnabled = false;
-
-  chanegDoprDowntate(
-    value,
-  ) {
-    isDropDownEnabled = value;
-    notifyListeners();
-  }
-
-  
-
   TextEditingController noteController = TextEditingController();
-
- 
-
-  
 }
-
- 
